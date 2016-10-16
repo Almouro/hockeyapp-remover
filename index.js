@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+
+import "babel-polyfill";
+
 const args = require('yargs')
   .demand(['token'])
   .argv;

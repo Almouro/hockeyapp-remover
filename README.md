@@ -3,25 +3,30 @@
 This script will go through all of your Hockeyapp apps
 and ask for each one whether it should delete it.
 
-## Install it
+## Usage
+
+```
+npm install -g hockeyapp-remover
+hockeyapp-remover --token <HockeyAppToken>
+```
+
+## Development
 
 ```
 npm install
 ```
 
-## Run it
-
 Run it directly with `babel-node`:
 ```
-./node_modules/.bin/babel-node index.js --token [HockeyAppToken]
+./node_modules/.bin/babel-node index.js --token <HockeyAppToken>
 ```
 
 Or transpile it first:
 ```
- ./node_modules/.bin/babel index.js > dist.js
- ```
+npm run build
+```
 
- And run:
- ```
- node dist.js
- ```
+And run:
+```
+node dist.js
+```
